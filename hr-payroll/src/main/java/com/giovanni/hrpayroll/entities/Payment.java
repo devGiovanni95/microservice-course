@@ -9,7 +9,7 @@ public class Payment implements Serializable {
     private Double dailyIncome;
     private Integer days;
 
-    public Payment(String name, String dailyIncome, int days){
+    public Payment(){
     }
 
     public Payment(String name, Double dailyIncome, Integer days) {

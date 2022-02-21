@@ -34,7 +34,6 @@ public class PaymentService {
 //        Worker worker = restTemplate.getForObject(url, responseType)
 //        Worker worker = restTemplate.getForObject(workerHost + "/workers/{id}", Worker.class, uriVariables);//para usar o ForObject e necessario criar um mapeamento de antemao
         Worker worker = workerFeignClient.findById(workerId).getBody();
-
 //        return new Payment("Giovanni", 200.0, days);   dados mocados
         return new Payment(worker.getName(),worker.getDailyIncome(), days);
     }
