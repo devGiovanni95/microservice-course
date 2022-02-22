@@ -18,6 +18,7 @@ import java.util.List;
 @RequestMapping(value={"/workers"})
 public class WorkerResource {
 
+
     //Para escrever coisas no logger
     private static Logger logger = LoggerFactory.getLogger(WorkerResource.class);
 
@@ -36,6 +37,16 @@ public class WorkerResource {
     
     @GetMapping(value = "/{id}")
     public ResponseEntity<Worker> findById(@PathVariable Long id) {
+
+        //Simulando uma Exception na requisicao e testando pra ver se a requisição chama o metodo alternativo
+//        try {
+//            Thread.sleep(3000L);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//outra tentativa de teste
+//        int x = 1;
+//        if (x == 1) throw new RuntimeException("Test");
 
         logger.info("Port = " + env.getProperty("local.server.port"));
 
