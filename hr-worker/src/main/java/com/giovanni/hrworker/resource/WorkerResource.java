@@ -38,7 +38,7 @@ public class WorkerResource {
     @GetMapping(value = "/{id}")
     public ResponseEntity<Worker> findById(@PathVariable Long id) {
 
-        //Simulando uma Exception na requisicao e testando pra ver se a requisição chama o metodo alternativo
+       // Simulando uma Exception na requisicao e testando pra ver se a requisição chama o metodo alternativo
 //        try {
 //            Thread.sleep(3000L);
 //        } catch (InterruptedException e) {
