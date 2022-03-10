@@ -18,7 +18,7 @@ import java.util.List;
 
 @RefreshScope//atualizar em tempo de execuçao qualquer mudança do arquivo de configuração
 @RestController
-@RequestMapping(value={"/workers"})
+@RequestMapping(value="/workers")
 public class WorkerResource {
 
 
