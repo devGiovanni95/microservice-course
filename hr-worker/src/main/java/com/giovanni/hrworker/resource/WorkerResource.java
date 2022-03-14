@@ -26,7 +26,7 @@ public class WorkerResource {
     private static Logger logger = LoggerFactory.getLogger(WorkerResource.class);
 
     //paratestar  buscar e acessar uma variavel de configuracao la no git
-    @Value("${test.config}")
+//    @Value("${test.config}")
        private String testConfig;
 
 
