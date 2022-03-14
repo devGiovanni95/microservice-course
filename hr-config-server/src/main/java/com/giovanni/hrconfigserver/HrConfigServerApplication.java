@@ -9,6 +9,7 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 @EnableConfigServer
 @SpringBootApplication
 public class HrConfigServerApplication implements CommandLineRunner {
+
 	@Value("${spring.cloud.config.server.git.username}")
 	private String username;
 	@Value("${spring.cloud.config.server.git.password}")
